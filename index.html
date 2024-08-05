@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pesquisa finanças</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <body>
+    <main class="container p-5">
+      <form action="" method="post" class="form p-4">
+        <h2 class="mb-4">Formulário de pesquisa</h2>
+
+        <div class="mb-3">
+          <label for="sexo" class="form-label">Sexo</label>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="sexo"
+              id="sexo_f"
+              value="m"
+              checked
+            />
+            <label class="form-check-label" for="sexo_m"> Masculino </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="sexo"
+              id="sexo_m"
+              value="f"
+            />
+            <label class="form-check-label" for="sexo_f">
+              Feminino
+            </label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="salario" class="form-label">Salário</label>
+          <input class="form-control" name="salario" placeholder="Salário" required/>
+        </div>
+
+        <div class="mb-3">
+          <label for="tipo_remuneracao" class="form-label"
+            >Tipo de remuneração</label
+          >
+          <select class="form-control shadow-none" name="tipo_remuneracao">
+            <option value="0">Fixa (CLT)</option>
+            <option value="1">Variável (freela)</option>
+            <option value="2">Variável (empresário)</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="renda_extra" class="form-label">Renda Extra Mensal</label>
+          <input
+            class="form-control"
+            name="renda_extra"
+            placeholder="Renda Extra Mensal"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="despesas" class="form-label">Despesas Mensais</label>
+          <input
+            class="form-control"
+            name="despesas"
+            placeholder="Despesas Mensais"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="dividas" class="form-label">Total de Dívidas</label>
+          <input
+            class="form-control"
+            name="dividas"
+            placeholder="Total de Dívidas"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="poupanca" class="form-label">Valor em Poupança</label>
+          <input
+            class="form-control"
+            name="poupanca"
+            placeholder="Valor em Poupança"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="investimentos" class="form-label"
+            >Valor em Investimentos</label
+          >
+          <input
+            class="form-control"
+            name="investimentos"
+            placeholder="Valor em Investimentos"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="objetivos_financeiros" class="form-label"
+            >Objetivos Financeiros (ex: comprar casa, viajar)</label
+          >
+          <input
+            class="form-control"
+            name="objetivos_financeiros"
+            placeholder="Objetivos Financeiros"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="plano_aposentadoria" class="form-label"
+            >Você possui um plano de aposentadoria?</label
+          >
+          <select class="form-control" name="plano_aposentadoria">
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="educacao_financeira" class="form-label"
+            >Você já participou de algum curso de educação financeira?</label
+          >
+          <select class="form-control" name="educacao_financeira">
+            <option value="0">Não</option>
+            <option value="1">Sim</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="tipo_risco" class="form-label">Tipo de risco</label>
+          <select class="form-control shadow-none" name="tipo_risco">
+            <option value="0">Não gosto de correr risco</option>
+            <option value="1">Corro risco de forma moderada</option>
+            <option value="2">Assumo riscos mais altos para ganhar mais</option>
+          </select>
+        </div>
+
+        <button class="btn btn-enviar text-white" type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
